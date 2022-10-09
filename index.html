@@ -5,77 +5,55 @@
     <meta name="description" content="Clothes for all people" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping is more fun - Kenkata</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/41c8b474e2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"crossorigin="anonymous"defer></script>
+    <script src="https://kit.fontawesome.com/41c8b474e2.js"crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"crossorigin="anonymous"/>
+    <link href="css/style.css" rel="stylesheet"/>
   </head>
   <body>
 
-    <header class="">
+  <header>
+      <!-- Top-Menu -->
       <div class="top-menu">
-        <div class="container">
-          <div class="site-settings">
-            <div class="dropdown dropdown-theme me-3">
-              <button
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span id="selected-language">ENG</span
-                ><i class="fa-solid fa-chevron-down ms-3"></i>
-              </button>
-              <ul id="languages" class="dropdown-menu dropdown-theme">
-                <li><a class="dropdown-item" href="#">ENG</a></li>
-                <li><a class="dropdown-item" href="#">SWE</a></li>
-              </ul>
-            </div>
-            <div class="dropdown dropdown-theme me-3">
-              <button
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span id="selected-currency">EUR</span
-                ><i class="fa-solid fa-chevron-down ms-3"></i>
-              </button>
-              <ul id="currencies" class="dropdown-menu dropdown-theme">
-                <li><a class="dropdown-item" href="#">EUR</a></li>
-                <li><a class="dropdown-item" href="#">USD</a></li>
-                <li><a class="dropdown-item" href="#">SEK</a></li>
-              </ul>
-            </div>
+          <div class="container">
+              <div class="site-settings">
+                  <div class="dropdown dropdown-theme me-3">
+                      <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                      </button>
+                      <ul id="languages" class="dropdown-menu dropdown-theme">
+                          <li><a class="dropdown-item" href="#">ENG</a></li>
+                          <li><a class="dropdown-item" href="#">SWE</a></li>
+                      </ul>
+                  </div>
+                  <div class="dropdown dropdown-theme me-3">
+                      <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                      </button>
+                      <ul id="currencies" class="dropdown-menu dropdown-theme">
+                          <li><a class="dropdown-item" href="#">EUR</a></li>
+                          <li><a class="dropdown-item" href="#">USD</a></li>
+                          <li><a class="dropdown-item" href="#">SEK</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="menu-links">
+                  <span class="links">
+                      <a href="#">Newsletter</a>
+                      <a href="#">Contact us</a>
+                      <a href="#">FAQs</a>
+                  </span>
+                  <span class="social-media">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  </span>
+              </div>
           </div>
-          <div class="menu-links">
-            <span class="links">
-              <a href="#">Newsletter</a>
-              <a href="#">Contact us</a>
-              <a href="#">FAQs</a>
-            </span>
-            <span class="social-media">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </span>
-          </div>
-        </div>
-      </div>
-
+    </div>
+      <!-- Main-Menu -->
       <div class="main-menu">
         <div class="container">
           <div class="brand">
@@ -83,33 +61,28 @@
               ><img src="images/Logotype.svg" alt="Kenkata Webshop"
             /></a>
           </div>
-          <div class="search"></div>
+          <div class="search">
+              <form id="searchboxForm">
+                  <input id="query" type="text" placeholder="search products...">
+                  <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+              </form>
+          </div>
           <div class="menu-links">
-            <a class="menu-link" href="#"
-              ><i class="fa-regular fa-user me-2"></i>My account</a
-            >
-            <a class="menu-link" href="#"
-              ><i class="fa-regular fa-heart"></i
-            ></a>
-            <a class="menu-link" href="#"
-              ><i class="fa-regular fa-shuffle"></i
-            ></a>
-            <a class="menu-link" href="#"
-              ><i class="fa-regular fa-cart-shopping me-2"></i>
-              <span id="cart-total">€99999.00</span>
+            <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i>My account</a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+            <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
+            <a id="cart" class="menu-link" href="#"><span class="badge rounded-pill">99+</span>
+              <i class="fa-regular fa-cart-shopping me-2"></i>
+              <span>€99999.00</span>
             </a>
           </div>
         </div>
-
+        <!-- Browse-cat/SO -->
         <nav>
           <div class="container">
             <div class="browse-categories">
               <div class="dropdown">
-                <button
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <span>
                     <i class="fa-regular fa-bars me-3"></i> Browse Categories
                   </span>
@@ -129,9 +102,9 @@
           </div>
         </nav>
       </div>
-    </header>
+  </header>
 
-    <section class="showcase d-none">
+  <section class="showcase">
       <div class="container">
         <div class="showcase-body">
           <h1>Shopping is <strong>MORE FUN</strong></h1>
@@ -143,9 +116,9 @@
         </div>
         <img src="images/showcase-image.svg" alt="two people standing" />
       </div>
-    </section>
+  </section>
 
-    <section class="webshop-info d-none">
+  <section class="webshop-info">
       <div class="container">
         <div class="info-box">
           <img src="images/icons/free-shipping-icon.svg" alt="Free shipping" />
@@ -176,45 +149,492 @@
           </div>
         </div>
       </div>
-    </section>
+  </section>
 
-    <section class="shop-by-category">
+  <section class="shop-by-category">
       <div class="container">
         <div class="section-title">
           <h1>SHOP BY <span>CATEGORY</span></h1>
-          <img src="images/wave-line.svg" alt="waveline">
-          <p>We always try to give you the best product within a fast and reliable way</p>
+          <img src="images/wave-line.svg" alt="waveline" />
+          <p>
+            We always try to give you the best product within a fast and
+            reliable way
+          </p>
         </div>
-      
-      <div class="grid">
-        <div id="category-box-1" class="category-box">
-          <div class="category-box-title">Men</div>
+
+        <div class="grid">
+          <a href="#" id="category-box-1" class="category-box">
+            <div class="category-box-title">
+              Men
+              <span>200 products</span>
+            </div>
+          </a>
+          <a href="#" id="category-box-2" class="category-box">
+            <div class="category-box-title">
+              Women
+              <span>1000 products</span>
+            </div>
+          </a>
+          <a href="#" id="category-box-3" class="category-box">
+            <div class="category-box-title">
+              Kids
+              <span>500 products</span>
+            </div>
+          </a>
+          <a href="#" id="category-box-4" class="category-box">
+            <div class="category-box-title">
+              Shoes
+              <span>200 products</span>
+            </div>
+          </a>
+          <a href="#" id="category-box-5" class="category-box">
+            <div class="category-box-title">
+              Hats
+              <span>30 products</span>
+            </div>
+          </a>
+          <a href="#" id="category-box-6" class="category-box">
+            <div class="category-box-title">
+              Sunglasses
+              <span>22 products</span>
+            </div>
+          </a>
+          <a href="#" id="category-box-7" class="category-box">
+            <div class="category-box-title">
+              Watches
+              <span>5 products</span>
+            </div>
+          </a>
         </div>
-        <div id="category-box-2" class="category-box">
-          <div class="category-box-title">Women</div>
+      </div>
+  </section>
+
+  <section class="new-arrivals">
+      <div class="container">
+        <div class="section-title">
+          <h1>NEW <span>ARRIVALS</span></h1>
+          <img src="images/wave-line.svg" alt="waveline" />
+          <p>
+            Check out our latest products from top fashion designers
+          </p>
         </div>
-        <div id="category-box-3" class="category-box">
-          <div class="category-box-title">Kids</div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card h-100">
+              <ul class="card-menu">
+                <li><i class="fa-solid fa-circle instock"></i></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+              </ul>
+                  <img src="images/placeholders/placeholder-male-body.png" alt="placeholder image">
+                <div class="card-body">
+                    <h1>Blue silk flare sleeved top</h1>
+                    <button disabled>Fashion</button>
+                    <p class="card-old-prize">€50.00</p>
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                      <p class="card-discount-prize">€20.00</p>
+                      <div class="text-theme">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                    </div>
+                </div>
+              <div class="card-background"></div>
+            </div>
         </div>
-        <div id="category-box-4" class="category-box">
-          <div class="category-box-title">Shoes</div>
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <ul class="card-menu">
+              <li><i class="fa-solid fa-circle outofstock"></i></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+            </ul>
+                <img src="images/placeholders/placeholder-male-chest.png" alt="placeholder image">
+              <div class="card-body">
+                  <h1>New look men's coat</h1>
+                  <button disabled>Fashion</button>
+                  <p class="card-old-prize">€60.00</p>
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <p class="card-discount-prize">€30.00</p>
+                    <div class="text-theme">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+              </div>
+            <div class="card-background"></div>
+          </div>
+      </div>
+      <!-- card 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <ul class="card-menu">
+            <li><i class="fa-solid fa-circle instock"></i></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+          </ul>
+              <img src="images/placeholders/placeholder-female-body.png" alt="placeholder image">
+            <div class="card-body">
+                <h1>Circle pattern girls shirt</h1>
+                <button disabled>Fashion</button>
+                <p class="card-old-prize">€35.00</p>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <p class="card-discount-prize">€10.00</p>
+                  <div class="text-theme">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+            </div>
+          <div class="card-background"></div>
         </div>
-        <div id="category-box-5" class="category-box">
-          <div class="category-box-title">Hats</div>
+      </div>
+      <!-- card 4 -->
+      <div class="col">
+        <div class="card h-100">
+          <ul class="card-menu">
+            <li><i class="fa-solid fa-circle instock"></i></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+          </ul>
+              <img src="images/placeholders/placeholder-male-chest.png" alt="placeholder image">
+            <div class="card-body">
+                <h1>Men's T-shirt stripe pattern</h1>
+                <button disabled>Fashion</button>
+                <p class="card-old-prize">€15.00</p>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <p class="card-discount-prize">€9.00</p>
+                  <div class="text-theme">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+            </div>
+          <div class="card-background"></div>
         </div>
-        <div id="category-box-6" class="category-box">
-          <div class="category-box-title">Sunglasses</div>
-        </div>
-        <div id="category-box-7" class="category-box">
-          <div class="category-box-title">Watches</div>
-        </div>
+      </div>
+    </div>  
+  </div>
+  </section>
+
+  <section class="new-customer">
+    <div class="container">
+      <div class="discount-offer">
+        <h1>30% <span>OFF</span></h1>
+        <p>For new customer</p>
+        <a href="#" class="btn btn-lg btn-theme-dark">SHOP NOW</a>
+      </div>
+      <div class="learn-more">
+        <p>Donec pulvinar arcu vitae ipsum varius cursus. Nunc iaculis fermentum iaculis. Nunc pulvinar purus at erat lacinia, ut convallis nibh consequat. Integer nulla nisi, aliquam at tellus a, viverra scelerisque purus. Nam pretium iaculis ultrices.</p>
+        <a href="#" class="btn btn-lg btn-white">LEARN MORE</a>
       </div>
     </div>
   </section>
 
+  <section class="featured-products">
+    <div class="container">
+      <div class="section-title">
+        <h1>FEATURED <span>PRODUCTS </span></h1>
+        <img src="images/wave-line.svg" alt="waveline" />
+        <p>
+          Check out our monthly featured products from top brands
+        </p>
+      </div>
 
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+          <div class="card h-100">
+            <ul class="card-menu">
+              <li><i class="fa-solid fa-circle instock"></i></li>
+              <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+            </ul>
+                <img src="images/placeholders/placeholder-female-coat.svg" alt="placeholder image">
+              <div class="card-body">
+                  <h1>Winter collection for women's</h1>
+                  <button disabled>Fashion</button>
+                  <p class="card-old-prize">€60.00</p>
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <p class="card-discount-prize">€30.00</p>
+                    <div class="text-theme">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+              </div>
+            <div class="card-background"></div>
+          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <ul class="card-menu">
+            <li><i class="fa-solid fa-circle outofstock"></i></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+          </ul>
+              <img src="images/placeholders/placeholder-male-body-coat.svg" alt="placeholder image">
+            <div class="card-body">
+                <h1>New look men's coat</h1>
+                <button disabled>Fashion</button>
+                <p class="card-old-prize">€60.00</p>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                  <p class="card-discount-prize">€30.00</p>
+                  <div class="text-theme">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+            </div>
+          <div class="card-background"></div>
+        </div>
+    </div>
+    <!-- card 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <ul class="card-menu">
+          <li><i class="fa-solid fa-circle outofstock"></i></li>
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+        </ul>
+            <img src="images/placeholders/placeholder-jacket.svg" alt="placeholder image">
+          <div class="card-body">
+              <h1>Red women's blazer full</h1>
+              <button disabled>Fashion</button>
+              <p class="card-old-prize">€34.00</p>
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <p class="card-discount-prize">€17.00</p>
+                <div class="text-theme">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+          </div>
+        <div class="card-background"></div>
+      </div>
+    </div>
+    <!-- card 4 -->
+    <div class="col">
+      <div class="card h-100">
+        <ul class="card-menu">
+          <li><i class="fa-solid fa-circle instock"></i></li>
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+        </ul>
+            <img src="images/placeholders/placeholder-male-body.png" alt="placeholder image">
+          <div class="card-body">
+              <h1>Men's baggy jeans collection</h1>
+              <button disabled>Fashion</button>
+              <p class="card-old-prize">€19.00</p>
+              <div class="d-flex justify-content-between align-items-center w-100">
+                <p class="card-discount-prize">€11.00</p>
+                <div class="text-theme">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+          </div>
+        <div class="card-background"></div>
+      </div>
+    </div>
+  </div>  
+</div>
+</section>
 
+  <section class="flash-sale">
+    <div class="container">
+        <div class="flash-sale-offer">
+            <div class="flash-sale-text">
+                <h1>FLASH <br>SALE</h1>
+                <p>UP TO 50% OFF</p>
+            </div>
+        </div>
+        <div class="flash-sale-countdown">
+            <div class="flash-sale-cirkels">
+                <div class="cirkel">
+                    <h1>7</h1>
+                    <p>Days</p>
+                </div>
+                <div class="cirkel">
+                    <h1>23</h1>
+                    <p>Hours</p>
+                </div>
+                <div class="cirkel">
+                    <h1>46</h1>
+                    <p>Minutes</p>
+                </div>
+                <div class="cirkel">
+                    <h1>12</h1>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <div class="flash-sale-btn">
+                <a href="#" class="btn btn-lg btn-white-theme-hover">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+  </section>
 
-    <div style="height: 4000px"></div>
+  <section class="top-sellers">
+    <div class="section-title">
+      <h1>TOP <span>SELLERS</span></h1>
+      <img src="images/wave-line.svg" alt="waveline" />
+      <p>
+        Check out our weekly top sellers in all category
+      </p>
+    </div>
+    <div class="container">
+      <!-- Card-1 -->
+      <div class="card card-1">
+        <ul class="card-menu">
+          <li><i class="fa-solid fa-circle instock"></i></li>
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+        </ul>
+        <img src="images/placeholders/placeholder-big-male-body.svg" alt="placeholder image">
+        <div class="card-body">
+          <h1>Men's denim shirts full</h1>
+          <button disabled>Fashion</button>
+          <p class="card-old-prize">$30.00</p>
+          <div class="card-text-stars">
+            <p class="card-discount-prize">$15.00</p>
+            <div class="text-theme">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-background"></div>
+      </div>
+      <!-- Card-2 -->
+      <div class="card card-2">
+        <ul class="card-menu">
+          <li><i class="fa-solid fa-circle outofstock"></i></li>
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+        </ul>
+        <img src="images/placeholders/placeholder-female-leather.svg" alt="placeholder image">
+        <div class="card-body">
+          <h1>Women's leather bag and shoe</h1>
+          <button disabled>Fashion</button>
+          <p class="card-old-prize">$42.00</p>
+          <div class="card-text-stars">
+            <p class="card-discount-prize">$35.00</p>
+            <div class="text-theme">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-background"></div>
+      </div>
+      <!-- Card-3 -->
+      <div class="card card-3">
+        <ul class="card-menu">
+          <li><i class="fa-solid fa-circle instock"></i></li>
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+        </ul>
+        <img src="images/placeholders/placeholder-shoes.svg" alt="placeholder image">
+        <div class="card-body">
+          <h1>New look men's sneakers</h1>
+          <button disabled>Fashion</button>
+          <p class="card-old-prize">$60.00</p>
+          <div class="card-text-stars">
+            <p class="card-discount-prize">$44.00</p>
+            <div class="text-theme">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-background"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="subscribe">
+    <div class="container">
+      <div class="sub-content">
+        <div class="sub-text">
+          <h1>SUBSCRIBE <span>NOW</span></h1>
+          <p>Signup for awesome news about our new products and
+            know our special discounts on products.</p>
+            <form id="subForm">
+                <input type="email" id="sub_email" required placeholder=" Enter email adress" autocomplete="email">
+                <button type="submit" class="sub-btn">Subscribe</button>
+            </form>
+        </div>
+      </div>
+      <div class="sub-image"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+        <h1>© Copyright 2022 Kenkata</h1>
+    </div>
+  </footer>
+  
   </body>
 </html>
